@@ -9,6 +9,10 @@
 ## S3
 1. data access patterns are unpredictable最适合智能分层
 2. IAM Policy是global级别的，他是针对用户来设置的，比如一个用户对所有的S3Bucket拥有get和list权限，那他就可以浏览任何一个Bucket的内容； 相较而言，S3 Bucket Policy仅仅是针对单个Bucket 而言的，他可以控制不同用户对他本身的访问权限；Bucket ACL是一个早期的服务，现在用的比较少了，但是如果我们需要对Bucket其中的具体对象配置访问权限，我们需要使用Bucket ACL。
+
+## S3 Access Point
+1. Amazon S3接入点是S3的一项功能，简化了将数据存储在S3中的任何AWS服务或客户应用程序的数据访问。使用S3接入点，客户可以为每个接入点创建独特的访问控制策略，以轻松控制对共享数据集的访问。App --S3 Access Point --S3 Gateway Endpoint --S3 Bucket
+
 ## AWS WAF
 1. 一个web ACL可关联多个aws资源，一个aws资源只能关联一个web ACL
 2. waf本质就是web ACL
@@ -41,7 +45,7 @@
 ## system manager
 
 1. 可以使用RDP管理ec2而不需要ssh
-2. 
+2. 会话管理器可以在会话期间进行活动日志记录 + 提供转发端口的能力.
 
 ## step function
 1. 使用json作为输入输出
@@ -74,3 +78,6 @@
 ## Amazon pinpoint
 1. 多渠道营销传播服务，如邮件、消息推送
 2.
+
+## AWS Trust Advisor
+1. AWSTrust Advisor提供建议，帮助您遵循AWS最佳实践。受信任的 Advisor（技术顾问）通过检查来评估您的帐户。这些检查确定了优化AWS基础设施、提高安全性和性能、降低成本和监控服务配额的方法。
