@@ -17,6 +17,7 @@
 1. 一个web ACL可关联多个aws资源，一个aws资源只能关联一个web ACL
 2. waf本质就是web ACL
 3. web ACL与cdn关联后，不能与其他aws资源关联
+4. aws waf可以设置拦截特定国家/地区的请求
 ## tag editor
 1. 使用tag editor修复未标记的资源是最佳实践
 ## auto scaling
