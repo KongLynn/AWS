@@ -1,3 +1,11 @@
+## VPC
+
+
+## VPC Peering
+1. 使用VPC Peering CIDR地址块不能重叠
+2. 接受者VPC可以属于另一个AWS帐户，并且可以位于请求者VPC的不同地区。
+3. 跨账户建立VPC Peering需要在接受者账户创建跨账户访问角色
+4.        
 ## scp
 1. scp只影响成员账户，不影响主账户
 2. 
