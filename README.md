@@ -1,2 +1,1 @@
-# AWS
-AWS SAP考点
+AWS 学习笔记
