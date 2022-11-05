@@ -6,6 +6,7 @@
 
 ## spot实例
 1. draining实例耗尽，收到实例终止通知两分钟内中断ecs任务，并在集群其他位置调度替换任务
+
 ## S3
 1. data access patterns are unpredictable最适合智能分层
 2. IAM Policy是global级别的，他是针对用户来设置的，比如一个用户对所有的S3Bucket拥有get和list权限，那他就可以浏览任何一个Bucket的内容； 相较而言，S3 Bucket Policy仅仅是针对单个Bucket 而言的，他可以控制不同用户对他本身的访问权限；Bucket ACL是一个早期的服务，现在用的比较少了，但是如果我们需要对Bucket其中的具体对象配置访问权限，我们需要使用Bucket ACL。
@@ -42,7 +43,7 @@
 1. 创建模版时需要给ec2授与访问db的IAM角色，应在实例的配置文件属性中引用该角色
 ## direct connect
 1. 仅使用 Direct Connect 连接到 EC2 等服务，您需要创建一个私有 VIF。 但是，如果您想加密流经 DirectConnect 的流量，您将需要使用 DX 的公共 VIF 来创建允许访问 AWS 服务（如 S3、EC2 等）的 VPN 连接。https://aws.amazon.com/premiumsupport/knowledge-center/create-vpn-direct-connect/.
-2. 
+
 ## system manager
 
 1. 可以使用RDP管理ec2而不需要ssh
@@ -53,7 +54,7 @@
 2. 
 ## AWS SSO
 1. AWS SSO不支持移动应用程序
-2. 
+
 
 ## EFS
 1. 没有跨区域复制功能
@@ -78,7 +79,7 @@
 2. 
 ## Amazon pinpoint
 1. 多渠道营销传播服务，如邮件、消息推送
-2.
+
 
 ## AWS Trust Advisor
 1. AWSTrust Advisor提供建议，帮助您遵循AWS最佳实践。受信任的 Advisor（技术顾问）通过检查来评估您的帐户。这些检查确定了优化AWS基础设施、提高安全性和性能、降低成本和监控服务配额的方法。
