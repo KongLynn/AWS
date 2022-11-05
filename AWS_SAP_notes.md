@@ -21,6 +21,7 @@
 
 ## Transit gateway
 1. 使用transit gateway在每个成员账户的vpc之间建立连接：使用AWS resource manager与成员账户共享transit gateway，在主账户启动cloud formation stack set，自动在成员账户创建vpc和attachment，将attachment与transit gateway ID关联
+2. 使用AWS resource manager可与其他账户共享前缀列表，可在其他账户配置安全组规则
 ## scp
 1. scp只影响成员账户，不影响主账户
 2. 
@@ -34,7 +35,7 @@
 1. data access patterns are unpredictable最适合智能分层
 2. IAM Policy是global级别的，他是针对用户来设置的，比如一个用户对所有的S3Bucket拥有get和list权限，那他就可以浏览任何一个Bucket的内容； 相较而言，S3 Bucket Policy仅仅是针对单个Bucket 而言的，他可以控制不同用户对他本身的访问权限；Bucket ACL是一个早期的服务，现在用的比较少了，但是如果我们需要对Bucket其中的具体对象配置访问权限，我们需要使用Bucket ACL。
 3. 创建跨区域副本：目标区域创建S3——两个S3之间设置跨区域复制——创建角色允许从源S3复制到目的S3，将角色分配给S3
-4. 
+4. 使用S3 RTC（Replication Time Control控制复制时间
 
 ## EFS
 1. 给另一个AWS账户授予从EC2访问自己的EFS：识别IP地址，在EC2的/etc/hosts添加该IP地址
@@ -64,6 +65,9 @@
 2. 
 ## cloud watch
 1. 基于指标，若基于事件/操作使用event bridge
+
+## ACM
+1. 不能直接在 Amazon Elastic Compute Cloud（EC2）实例上安装 Amazon 颁发的证书。而应使用具有负载均衡器的证书，然后在负载均衡器后面注册 EC2 实例。
 ## hpc
 1. hpc集群应在单个AZ中；
 2. 
@@ -95,6 +99,9 @@
 1. 无服务器grahql和pub/sub api服务，简化web和app的构建
 2. 
 
+##DataSync
+1. 提供内置安全功能
+2. 
 ## cloudendure migration
 1. 快速迁移windows和linux的应用程序和数据库
 2. 
