@@ -62,7 +62,18 @@
 
 ## RDS
 1. RDS代理可解决高连接的问题
-2. 
+
+
+## AWS Snow 
+1. AWS Snowcone 是 AWS Snow 系列边缘计算和数据传输设备中尺寸最小的成员,Snow cone最多传输14TB数据。
+2. AWS Snowball 是一种数据迁移和边缘计算设备，具有两个设备选项：计算优化和存储优化。
+
+Snowball Edge Storage Optimized 设备提供了 40 个 vCPU 的计算容量，以及 80TB 的可用数据块或与 Amazon S3 兼容的对象存储。它非常适合本地存储和大规模数据传输。
+
+Snowball Edge Compute Optimized 提供了 52 个 vCPU、42TB 可用数据块或对象存储，以及适用于断开连接的环境中高级机器学习和完全动态视频分析等使用案例的可选 GPU。
+3. AWS Snowmobile 是一个 45 英尺长的坚固集装箱，可迁移高达 100PB 的数据，非常适合数 PB 级或 EB 级数字媒体迁移和数据中心关闭的情况。
+4. Snow cone最多14TB
+
 ## cloud watch
 1. 基于指标，若基于事件/操作使用event bridge
 
